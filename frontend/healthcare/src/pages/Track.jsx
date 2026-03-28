@@ -7,7 +7,7 @@ export default function Track() {
 
   const trackRequest = async () => {
     try {
-      const res = await axios.get(`http://localhost:3000/api/requests/${id}`);
+      const res = await axios.get(`https://healthcare-0rpi.onrender.com/api/requests/${id}`);
       setResult(res.data);
     } catch (err) {
       alert("Request not found");

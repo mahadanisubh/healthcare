@@ -7,7 +7,7 @@ export default function Form() {
 
   const handleSubmit = async () => {
     const res = await axios.post(
-      "http://localhost:3000/api/requests/analyze",
+      "https://healthcare-0rpi.onrender.com/api/requests/analyze",
       data,
     );
     setResult(res.data);

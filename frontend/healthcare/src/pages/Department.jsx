@@ -9,7 +9,7 @@ export default function Department() {
     if (!dept) return alert("Select department first");
 
     const res = await axios.get(
-      `http://localhost:3000/api/requests/department/${dept}`
+      `https://healthcare-0rpi.onrender.com/api/requests/department/${dept}`
     );
 
     setRequests(res.data);
@@ -17,7 +17,7 @@ export default function Department() {
 
   const updateStatus = async (id, status) => {
     await axios.put(
-      `http://localhost:3000/api/requests/${id}/status`,
+      `https://healthcare-0rpi.onrender.com/api/requests/${id}/status`,
       { status }
     );
     fetchRequests();
